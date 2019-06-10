@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet"> 
+    <!-- Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Ciąg Fibonacciego</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Oblicz n-ty wyraz ciągu Fibonacciego.</h1>
+        <form>
+            <label for="number">Wpisz który wyraz ciągu chcesz obliczyć.</label>
+            <input type="number" name="number" id="number" min="0" required placeholder="Podaj n-ty wyraz do obliczenia...">
+            <button type="submit" class="btn">Start</button>
+            <button type="button" class="stop btn-stop"> Zatrzymaj </button>
+        </form>
+        <a data-scroll href="#end" id="start"><i class="fas fa-angle-double-down"></i></a>
+          <div class="result">
+            <ul>
+              <li style="display: none;"></li>
+            </ul>
+          </div>
+          <a data-scroll href="#start" id="end"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <!--Scripts-->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
